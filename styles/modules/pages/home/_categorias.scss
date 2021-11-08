@@ -1,0 +1,52 @@
+.categorias {
+  &__wrapper {
+    &--titulo {
+      transition: all 0.3s;
+    }
+    &--eletrodomesticos {
+      background: url("../images/eletrodomesticos.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 163%;
+      min-width: 100%;
+      min-height: 60rem;
+      transition: all 0.6s;
+      &:hover {
+        background-size: auto 199%;
+        & > a > .categorias__wrapper--titulo {
+          transform: scale(1.2) translateX(7rem);
+        }
+      }
+    }
+    &--decoracao {
+      background: url("../images/cozinha.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 163%;
+      min-width: 100%;
+      min-height: 26rem;
+      transition: all 0.6s;
+      &:hover {
+        background-size: auto 199%;
+        & > a > .categorias__wrapper--titulo {
+          transform: scale(1.2) translateX(7rem);
+        }
+      }
+    }
+    &--brinquedos {
+      background: url("../images/brinquedos.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 163%;
+      min-width: 100%;
+      min-height: 26rem;
+      transition: all 0.6s;
+      &:hover {
+        background-size: auto 199%;
+        & > a > .categorias__wrapper--titulo {
+          transform: scale(1.2) translateX(7rem);
+        }
+      }
+    }
+  }
+}

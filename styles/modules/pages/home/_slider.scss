@@ -1,0 +1,15 @@
+section#slider-custom {
+  min-width: 100%;
+  max-height: 23rem;
+  overflow: hidden;
+  & > div {
+    min-width: 100%;
+    max-height: 23rem;
+    overflow: hidden;
+    & > div.caroufredsel_wrapper {
+      min-width: 100%;
+      max-height: 23rem;
+      overflow: hidden;
+    }
+  }
+}

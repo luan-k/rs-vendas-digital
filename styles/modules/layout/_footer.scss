@@ -1,0 +1,22 @@
+footer {
+}
+.footer-text {
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9vw;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+div.map-responsive > iframe {
+  min-width: 100%;
+}
+@media (max-width: 500px) {
+  .footer-text {
+    font-size: 3.3vw;
+  }
+  .clip-footer-home {
+    -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+  }
+}

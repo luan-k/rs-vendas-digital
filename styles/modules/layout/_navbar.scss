@@ -1,0 +1,139 @@
+.logo-wraper {
+  width: 7rem;
+}
+.icon-nav > a {
+  transition: all 0.3s;
+}
+.icon-nav > a > * {
+  transition: all 0.3s;
+}
+.icon-nav > a:hover {
+  color: var(--lightPrimary);
+}
+.icon-nav > a:hover > * {
+  color: var(--lightPrimary);
+}
+
+nav ul li a {
+  color: rgb(104, 104, 104);
+  text-decoration: none;
+}
+/* End General */
+
+/* Start Navbar */
+nav ul > li {
+  padding: 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-left: -5px;
+  font-size: 1.6rem;
+}
+/* nav ul > li:not(:last-of-type):hover {
+  background-color: #222;
+} */
+/* nav ul > li:first-of-type {
+  background-color: #222;
+} */
+nav ul > li:last-of-type {
+  float: right;
+}
+nav ul > li:last-of-type a .fa {
+  font-size: 1.6rem;
+}
+/* End Navbar */
+
+/* Start Menue Right */
+nav ul > li:last-of-type {
+  position: relative;
+  display: none;
+}
+nav ul > ol {
+  position: absolute;
+  top: 49px;
+  right: 0;
+  background: #333;
+  text-align: center;
+  list-style: none;
+  display: none;
+  z-index: 99;
+}
+nav ul > ol > li {
+  width: 100vw;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease;
+}
+nav ul > ol > li:hover a {
+  margin: 20px;
+}
+nav ul > ol > li:hover {
+  cursor: pointer;
+}
+nav ul input {
+  opacity: 0.7;
+  padding: 5px;
+  flot: right;
+  display: none;
+}
+/* Start Menue Right */
+
+/* Start Media Query */
+@media screen and (max-width: 680px) {
+  .menu-mob {
+    min-width: 100%;
+    min-height: 5rem;
+  }
+  nav ul > li {
+    display: none;
+  }
+  nav ul > li:last-of-type {
+    display: block;
+  }
+  nav ul input {
+    display: inline;
+  }
+}
+@media screen and (min-width: 680px) {
+  nav ul > ol > li {
+    display: none;
+  }
+}
+/* End Media Query */
+.current-menu-item {
+  background: var(--darkPrimary);
+}
+ul.flex > li > a {
+  padding: 4rem 0;
+}
+/* Dropdown */
+.custom-menu-link {
+  transition: all 0.5s;
+  & > .menu-container {
+    display: none;
+    height: 0;
+
+    top: 9rem;
+    left: 0;
+    min-width: 100vw !important;
+    background-color: #ffffffd6;
+    z-index: 99;
+    padding: 0;
+    transition: all 0.5s;
+    & > ul {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &:hover > .menu-container {
+    display: grid;
+    position: absolute;
+    padding: 3rem 0;
+    min-height: 12rem;
+    height: 100%;
+    @apply container;
+  }
+}
